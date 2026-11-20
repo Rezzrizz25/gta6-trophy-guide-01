@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI PS5 trophies: roadmap to the platinum, missable warning, and a guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide</p>
+    <h1>GTA 6 Trophy Guide &amp; Tracker</h1>
+    <p class="sub">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze. Difficulty 4/10, about 200 hours to platinum. Every trophy has a guide in our own words, with its sources cited.</p>
+    <div class="progress" aria-label="Overall progress">
+      <div class="progress-text"><strong id="earnedCount">0 / 55</strong> earned &middot; <span id="earnedPct">0%</span></div>
+      <div class="bar"><div class="bar-fill" id="progressBar" style="width:0%"></div></div>
+      <div class="grades" id="gradeCounts"></div>
+    </div>
+    <nav class="tabs" aria-label="Views">
+      <button data-view="checklist" class="tab active" type="button">Checklist</button>
+      <button data-view="roadmap" class="tab" type="button">Roadmap</button>
+      <button data-view="missables" class="tab" type="button">Missables</button>
+      <button data-view="sources" class="tab" type="button">Sources</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="view-checklist" class="view">
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search trophies, descriptions, guides…" aria-label="Search trophies">
+      <select id="filterGrade" aria-label="Filter by grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+      <select id="filterKind" aria-label="Filter by kind">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="side">Side / Strangers</option>
+        <option value="misc">Misc</option>
+      </select>
+      <select id="filterStatus" aria-label="Filter by status">
+        <option value="all">All statuses</option>
+        <option value="earned">Earned</option>
+        <option value="unearned">Unearned</option>
+      </select>
+      <label class="check"><input type="checkbox" id="filterMissable"> Missable only</label>
+      <label class="check"><input type="checkbox" id="filterHideEarned"> Hide earned</label>
+      <label class="check"><input type="checkbox" id="spoilerToggle" checked> Hide story spoilers</label>
+    </div>
+    <div class="actions">
+      <button id="exportBtn" type="button">Export progress (JSON)</button>
+      <button id="importBtn" type="button">Import progress</button>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+      <button id="resetBtn" type="button">Reset progress</button>
+      <span id="saveNote" class="note">Progress saves in this browser automatically.</span>
+    </div>
+    <p id="resultCount" class="note"></p>
+    <div class="layout">
+      <ul id="trophyList" class="list" aria-label="Trophy list"></ul>
+      <aside id="detail" class="detail" aria-live="polite">
+        <p class="detail-empty">Select a trophy to read its full guide.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <h2>Roadmap to the Platinum</h2>
+    <p class="lede">Total: <strong>~200 hours</strong> &middot; Difficulty: <strong>4/10</strong> &middot; All offline, single-player, one playthrough. No mission replay — keep a separate save at the start and end of each chapter.</p>
+    <div class="warn"><strong>Missable warning:</strong> only one trophy can be missed — <strong>Positive Mental Attitude</strong>. In Chapter 1, after the mission “Down to Earth”, Lucia mentions meditating in the kitchen at Jason's house in the morning. Follow her to the balcony and accept. It may or may not count toward the 18 meditation spots, and it cannot be repeated after Chapter 1. Do it anyway. Everything else is safe in free-roam after the story.</div>
+    <div class="warn"><strong>No cheats on the platinum save:</strong> cheats disable trophies and saving. Keep them off.</div>
+    <ol class="stages">
+      <li>
+        <h3>Stage 1 — Story + side activities <span class="hours">60–80 hours</span></h3>
+        <p>Play the story through all 5 chapters. Trophies: the chapter trophies, the mission trophies (Gone Fishing, Breakfast Run, The Cartel Heist, Child's Play, Headliners, VCIA Takedown, Operation Savage Glory) and the final-mission gold. As you go: try each activity type once (Master of None), scan animals and vehicles with WAiNK and binoculars whenever you can, and meditate at every spot you find.</p>
+        <p><strong>Ends with:</strong> story complete, final-mission gold, 100% checklist unlocked under Progress &gt; Stats.</p>
+      </li>
+      <li>
+        <h3>Stage 2 — 100% checklist + challenges <span class="hours">~100 hours</span></h3>
+        <p>The long grind. The checklist needs roughly 60% true completion: every robbery, underwater discovery, shooting range and drone race, Bret's quest; 70 of 80 Challenges (skip the nastiest 10); 200 of 277 vehicle models; 100 of 255 animals; 300 of 397 stunts (the trophy needs 250). Along the way: gold all 42 Shooting Range challenges, win Top Fun drone races at all 14 locations, meditate at all 18 spots, WAiNK 100 locations, complete 3 of 18 card sets, rob 5 bank vaults, rob one Illegal Operation per gang (9), explore all 52 areas, launder $250,000 in Marked Bills, spend $100,000 in shops, buy all 8 garage properties.</p>
+        <p><strong>Ends with:</strong> the 100% gold “A Long Road” and most silver trophies.</p>
+      </li>
+      <li>
+        <h3>Stage 3 — Strangers &amp; Freaks + cleanup <span class="hours">10–20 hours</span></h3>
+        <p>Finish the 8 Stranger mission strands (Andy, Kenton, Billy, Randy and Tyrone each have their own trophy), then clean up whatever is left: partner trophies (Hot Together, Retail Therapy), Gunslinger, Catch Me If You Can, the armored truck, the jewelry store, Scooter Bros registrations, and the five still-unsolved hidden trophies — check the cited sources for the latest community findings on those.</p>
+        <p><strong>Ends with:</strong> the platinum, “Vice Got a Price!”.</p>
+      </li>
+    </ol>
+    <h3>Tips that save hours</h3>
+    <ul class="tips">
+      <li>Scan as you go: animals and vehicles scanned during the story count toward the 100% checklist.</li>
+      <li>Keep a manual save at every chapter boundary — there is no mission replay.</li>
+      <li>Never use cheats on the platinum save: they disable trophies and saving.</li>
+      <li>For Challenges, aim for 70 of 80 and skip the 10 nastiest — the trophy only needs 50.</li>
+      <li>Stunts: the trophy needs 250, but 100% needs 300 — keep going to 300 and both tick at once.</li>
+    </ul>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <h2>Missables</h2>
+    <p class="lede">Good news: GTA 6 is forgiving. <strong>Only one trophy is potentially missable.</strong> Everything else can be earned in free-roam after the story.</p>
+    <div class="miss-card">
+      <h3><span class="badge bronze">Bronze</span> Positive Mental Attitude — the one to watch</h3>
+      <p><strong>What:</strong> meditate at every spot across Leonida (18 spots).</p>
+      <p><strong>Why it can be missed:</strong> in Chapter 1, after the mission “Down to Earth”, Lucia mentions meditating in the kitchen at Jason's house in the morning. Follow her to the balcony and accept the meditation. It may or may not count toward the 18 — and it cannot be repeated once Chapter 1 ends.</p>
+      <p><strong>What to do:</strong> do the balcony meditation while you are in Chapter 1, then meditate at every spot you find for the rest of the game. The other 17 spots are all reachable in free-roam.</p>
+      <p><strong>If you already passed Chapter 1:</strong> keep a chapter save if you have one and go back; if not, finish the other 17 spots and watch the cited sources — the community is still confirming whether the balcony meditation is required.</p>
+    </div>
+    <h3>Everything else is safe</h3>
+    <p>All 54 other trophies — story, activities, collectibles, robberies, Stranger strands — can be earned after the story in free-roam. There is no missable story choice that locks a trophy, and no trophy requires a specific story outcome. The five hidden trophies still unsolved by guide sites (In The Beginning…, Capital Offense, Bad Luck, I Guess, The Truth Is Out There, Ten Pin) are listed as unconfirmed in their guides — their methods are not known yet, so nothing about them can be missed either.</p>
+  </section>
+
+  <section id="view-sources" class="view" hidden>
+    <h2>Sources</h2>
+    <p class="lede">Every guide in this app is written in our own words. The facts it is built on come from these published guides, cited per trophy. The official trophy list was <strong>not</strong> published by Rockstar or Sony — names, descriptions and grades are as Exophase and PSNProfiles list them, and the two lists agree on all 55.</p>
+    <ul class="sources" id="sourceList"></ul>
+    <p class="note">Five hidden trophies — “In The Beginning…”, “Capital Offense”, “Bad Luck, I Guess”, “The Truth Is Out There” and “Ten Pin” — were still unsolved by guide sites as of Nov 20, 2026. Their guides here say so plainly and invent no method.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>GTA 6 Trophy Guide &amp; Tracker — an unofficial, fan-made guide. Grand Theft Auto and GTA are trademarks of Rockstar Games. This guide works fully offline; the only network use is you clicking a source link. MIT licensed.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
