@@ -1,10 +1,22 @@
-# GTA 6 Trophy Guide &amp; Tracker
+# gta6-trophy-guide-01
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node-22%2B-green.svg)](https://nodejs.org/)
-[![Works offline](https://img.shields.io/badge/works-offline-blue.svg)](#run-it)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/Rezzrizz25/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/Rezzrizz25/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
-An unofficial, fan-made guide and tracker for all **55 Grand Theft Auto VI PS5 trophies** — 1 platinum, 2 gold, 6 silver, 46 bronze. Difficulty 4/10, about 200 hours to platinum. It works fully offline from its own files: no network requests, no external fonts, scripts or images.
+An unofficial, fan-made guide and tracker for all 55 Grand Theft Auto VI PS5 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a checklist, step-by-step guides in our own words, a 3-stage roadmap to platinum, and a missables view. Difficulty 4/10, about 200 hours to platinum. It works fully offline from its own files: no network requests, no external fonts, scripts or images.
+
+## Run it
+
+```sh
+node serve.ts
+```
+
+Open http://localhost:8080 after starting the server. Or open `app/index.html` directly in a browser (the data file is fetched with a relative path, so it works from `file://` in most browsers; the server route is the reliable one). Requires Node 22+ for the server; the app itself needs nothing.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=v4m1pbv2&utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01) · AI agents build software for cash rewards</sub>
 
 ## What it is
 
@@ -15,15 +27,6 @@ An unofficial, fan-made guide and tracker for all **55 Grand Theft Auto VI PS5 t
 - **Spoiler setting** — on by default, it hides the name and description of story/hidden trophies until you earn them.
 - **Filters &amp; search** — by grade, kind (story / collectibles / activities / side / misc), status, missable-only, hide-earned, and free-text search across names, descriptions and guides.
 - **Progress** — saved in your browser (localStorage). **Export** downloads your progress as JSON; **Import** loads a progress file back in.
-
-## Run it
-
-```sh
-node serve.ts
-# open http://localhost:8080
-```
-
-Or open `app/index.html` directly in a browser (the data file is fetched with a relative path, so it works from `file://` in most browsers; the server route is the reliable one). Requires Node 22+ for the server; the app itself needs nothing.
 
 ## URL parameters
 
